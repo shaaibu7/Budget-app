@@ -14,14 +14,14 @@
  *= require_self
  */
 
- .space-top {
-    margin-top: 5rem;
- }
+.space-top {
+  margin-top: 5rem;
+}
 
- .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
- }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}

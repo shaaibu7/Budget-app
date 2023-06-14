@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-    def splash
-        if user_signed_in?
-            redirect_to user_groups_path(current_user.id)
-        end
-    end
+  def splash
+    return unless user_signed_in?
+
+    redirect_to user_groups_path(current_user.id)
+  end
 end
