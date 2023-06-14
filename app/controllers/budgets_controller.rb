@@ -6,6 +6,11 @@ class BudgetsController < ApplicationController
 
     def new
         @budget = Budget.new
+        @groups = Group.find(params[:group_id])
+
+        if @groups.nil?
+            @groups = [] # Initialize an empty array to avoid the "nil" error
+        end
     end
 
     def create

@@ -21,7 +21,7 @@
                 </h3>
                 <p class="text-secondary"><%= item.created_at.to_date %></p>
             </div>
-            <div class="fw-bold p-3">$100</div>
+            <div class="fw-bold p-3"><%= item.total_amount_by_group(item.id) %></div>
         </div>
         <% end %>
     </div>
