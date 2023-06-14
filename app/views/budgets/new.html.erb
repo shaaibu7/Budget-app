@@ -1,0 +1,13 @@
+<h1>Create Transaction</h1>
+
+<%= form_with model: @budget, url: user_group_budgets_path, method: :post, local: true, scope: :budget do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+
+    <%= f.submit 'Create Transaction' %>
+  </div>
+<% end %>

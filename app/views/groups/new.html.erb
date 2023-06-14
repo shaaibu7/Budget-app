@@ -1,0 +1,13 @@
+<h1>Create Category</h1>
+
+<%= form_with model: @group, url: user_groups_path, method: :post, local: true, scope: :group do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :icon %>
+    <%= f.text_field :icon %>
+
+    <%= f.submit 'Create Category' %>
+  </div>
+<% end %>
