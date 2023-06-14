@@ -17,30 +17,32 @@
 
   <div class="user-fields">
       <div class="field">
-      <%= f.text_field :name, autofocus: true, placeholder: "Enter your name" %>
+      <%= f.text_field :name, autofocus: true, placeholder: "Enter your name", class: "form-control rounded-0" %>
   </div>
 
   <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Enter your email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Enter your email", class: "form-control rounded-0" %>
   </div>
 
   <div class="field">
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Enter your password" %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: "Enter your password", class: "form-control rounded-0" %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password confirmation" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password confirmation", class: "form-control rounded-0" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="actions form-container">
+    <%= f.submit "Sign up", class: "bg-primary " %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<div class="form-container">
+  <%= render "devise/shared/links" %>
+</div>
 
    </div>     
      
