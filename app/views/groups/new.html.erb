@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <%= stylesheet_link_tag 'application.css' %>
+    <title>Category</title>
+</head>
+<body>
+    <header class="bg-info text-white fixed-top">
+        <nav class="d-flex justify-content-between p-3 align-items text-center">
+            <a href="/">
+                <i class="fa fa-arrow-left fa-2x text-white" aria-hidden="true"></i>
+            </a>
+            <h2 class="m-0 p-0">Create Category</h2>
+            <div class="d-flex text-decoration-none">
+                <h3>
+                    <%= link_to 'Sign out', destroy_user_session_path, method: :delete , class: 'text-white' %>
+                </h3>
+            </div>
+        </nav>
+     </header>
+
+     <div class="space-top">
+        <%= form_with model: @group, url: user_groups_path, method: :post, local: true, scope: :group do |f| %>
+  <div>
+    <div class="field">
+    <%= f.text_field :name, placeholder: "Category Name", class: "form-control rounded-0" %>
+    </div>
+
+    <div class="field">
+    <%= f.text_field :icon, placeholder: "Enter Icon url", class: "form-control rounded-0" %>
+    </div>
+
+    <div class="d-flex flex-column fixed-bottom text-center bg-success w-100 p-3">
+        <%= f.submit 'Create Category', class: "bg-success fw-bold" %>
+    </div>
+  </div>
+<% end %>
+     </div>
+
+     
+</body>
+</html>
