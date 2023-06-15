@@ -67,7 +67,7 @@
 
 ## 📹 Video Description
 
-- [Video Description Link](https://www.loom.com/share/bb51379e56854720a0178d1cf8c4d2c5?sid=e109121e-20f7-49f7-b0e0-9bfd8f54962d)
+- [Video Description](https://www.loom.com/share/bb51379e56854720a0178d1cf8c4d2c5?sid=e109121e-20f7-49f7-b0e0-9bfd8f54962d)
 
 
 <!-- GETTING STARTED -->
@@ -191,6 +191,8 @@ Thank you for your support and for being a part of this journey! ❤️
 I would like to thank: 
 - Microverse
 - Code Reviewers
+
+- <p> I would like to express gratitude to <a href="https://www.behance.net/gregoirevella">Gregoire Vella</a>, as per the Creative Commons license.</p>
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

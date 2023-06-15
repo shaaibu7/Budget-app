@@ -32,7 +32,7 @@ RSpec.describe Group, type: :request do
 
     it 'render form to add group' do
       get new_user_group_path(@user)
-      expect(response.body).to include('Create Category')
+      expect(response.body).to include('CREATE CATEGORY')
       expect(response.body).to include('Sign out')
     end
   end

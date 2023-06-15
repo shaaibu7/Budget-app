@@ -13,21 +13,21 @@
 
     <div class="space-top">
         <% @group.each do |item| %>
-        <div class="d-flex flex-direction-row justify-content-between bg-white text-align-center align-content-center border border-grey p-1 m-4">
+        <div class="d-flex flex-direction-row justify-content-between bg-white text-align-center align-content-center border border-grey p-1 m-4 mb-5">
             <img src=<%= item.icon %> class="img-fluid img-thumbnail w-25">
-            <div>
-                <h3>
-                    <%= link_to item.name, user_group_budgets_path(current_user, item.id) %>
+            <div class="group-text">
+                <h3 class="link-tag">
+                    <%= link_to item.name, user_group_budgets_path(current_user, item.id), class: "link-tag" %>
                 </h3>
-                <p class="text-secondary"><%= item.created_at.to_date %></p>
+                <p class="text-secondary date-text"><%= item.created_at.to_date %></p>
             </div>
-            <div class="fw-bold p-3"><%= item.total_amount_by_group(item.id) %></div>
+            <div class="fw-bold p-4">$<%= item.total_amount_by_group(item.id) %></div>
         </div>
         <% end %>
     </div>
-    <div class="d-flex flex-column fixed-bottom text-center bg-success w-100 p-3">
+    <div class="d-flex flex-column fixed-bottom text-center green w-100 p-2">
         <h2>
-            <%= link_to 'Add New Category', new_user_group_path %>
+            <%= link_to 'Add New Category', new_user_group_path, class: "link-tag" %>
         </h2>
     </div>
      

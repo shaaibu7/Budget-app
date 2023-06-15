@@ -32,7 +32,7 @@ RSpec.describe Group, type: :feature do
     scenario 'should redirect to page for adding new category' do
       visit user_groups_path(@user)
       click_link 'Add New Category'
-      expect(page).to have_content('Create Category')
+      expect(page).to have_content('Create New Category')
     end
   end
 end
