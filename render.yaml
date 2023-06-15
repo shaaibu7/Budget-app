@@ -1,18 +1,18 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: budget
+    databaseName: budget_8vx4
+    user: budget_8vx4_user
 
 services:
   - type: web
-    name: mysite
+    name: budget
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: budget_8vx4
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
