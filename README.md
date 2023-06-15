@@ -62,12 +62,12 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://budget-c1ft.onrender.com)
 
 
 ## 📹 Video Description
 
-- [Video Description Link]()
+- [Video Description Link](https://www.loom.com/share/bb51379e56854720a0178d1cf8c4d2c5?sid=e109121e-20f7-49f7-b0e0-9bfd8f54962d)
 
 
 <!-- GETTING STARTED -->
