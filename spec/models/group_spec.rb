@@ -8,7 +8,7 @@ RSpec.describe Group, type: :model do
 
   it 'should create a valid group for user' do
     expect(@group).to be_valid
-  end       
+  end
 
   it 'should not be valid without name' do
     @group.name = nil
@@ -19,5 +19,4 @@ RSpec.describe Group, type: :model do
     @group.icon = nil
     expect(@group).to_not be_valid
   end
-
 end

@@ -11,5 +11,4 @@ RSpec.describe Group, type: :model do
   it 'should create a valid budget group' do
     expect(@budget_group).to be_valid
   end
-   
 end

@@ -7,34 +7,32 @@ RSpec.describe Group, type: :feature do
     @budget = Budget.create(name: 'clean', amount: 12, author_id: @user.id)
     @budget_group = BudgetGroup.create(group_id: @group.id, budget_id: @budget.id)
 
-
     visit new_user_session_path
     fill_in 'user_email', with: @user.email
     fill_in 'user_password', with: @user.password
     click_button 'Log in'
-   end
- 
-   describe 'Test for group page' do
+  end
+
+  describe 'Test for group page' do
     scenario 'should have contents for group' do
-        visit user_groups_path(@user)
-        expect(page).to have_content('Add New Category', )
+      visit user_groups_path(@user)
+      expect(page).to have_content('Add New Category')
     end
 
     scenario 'should show name of group' do
-        visit user_groups_path(@user)
-        expect(page).to have_content('Car')
+      visit user_groups_path(@user)
+      expect(page).to have_content('Car')
     end
 
     scenario 'should display sum of transactions' do
-        visit user_groups_path(@user)
-        expect(page).to have_content(@budget.amount)
+      visit user_groups_path(@user)
+      expect(page).to have_content(@budget.amount)
     end
 
     scenario 'should redirect to page for adding new category' do
-        visit user_groups_path(@user)
-        click_link 'Add New Category'
-        expect(page).to have_content('Create Category')
+      visit user_groups_path(@user)
+      click_link 'Add New Category'
+      expect(page).to have_content('Create Category')
     end
-   end
-   
+  end
 end
