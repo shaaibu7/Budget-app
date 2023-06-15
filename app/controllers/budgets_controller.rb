@@ -1,7 +1,7 @@
 class BudgetsController < ApplicationController
   def index
     @group = Group.find(params[:group_id])
-    @budgets = @group.budgets.order(created_at: :desc)
+    @budgets = @group.budgets.includes(:budget_groups).order(created_at: :desc)
   end
 
   def new

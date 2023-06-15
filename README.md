@@ -191,6 +191,8 @@ Thank you for your support and for being a part of this journey! ❤️
 I would like to thank: 
 - Microverse
 - Code Reviewers
+
+- <p> I would like to express gratitude to <a href="https://www.behance.net/gregoirevella">Gregoire Vella</a>, as per the Creative Commons license.</p>
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

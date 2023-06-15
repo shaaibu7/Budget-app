@@ -25,3 +25,30 @@
   align-items: center;
   margin-top: 2rem;
 }
+
+.skyblue {
+  background-color: #3778c2;
+}
+
+.green {
+  background-color: #5fb523;
+}
+
+.link-tag {
+  text-decoration: none;
+  margin-top: 5px;
+  color: #434b54;
+}
+
+.date-text {
+  padding-top: 2rem;
+}
+
+.group-text {
+  padding-top: 1rem;
+}
+
+.border-create {
+  border: 1px solid white;
+  padding: 1rem;
+}
